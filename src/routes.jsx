@@ -37,7 +37,7 @@ const router = createBrowserRouter([
     }
 ], {
   // Isso resolve o erro do GitHub Pages
-  basename: "/" 
+  basename: "/nutri-raquel-alves-site/" 
 });
 
 export default router;

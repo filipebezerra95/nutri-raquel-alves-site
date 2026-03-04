@@ -361,8 +361,9 @@ export const RaquelSerie = styled.img`
   }
   @media (max-width: 768px){
     bottom: 0;
-    left:13%;  
-    height: 45vh;
+    
+    left:14%;  
+    height: 43vh;
     width: auto;
   }
   
