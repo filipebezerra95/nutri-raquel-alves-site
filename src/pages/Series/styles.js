@@ -319,7 +319,7 @@ export const AgendeButton = styled.button`
     height: 3rem;
     padding: 0;
     position: relative;
-    bottom: 2rem;
+    bottom: 4rem;
     
     .title {
       font-size: 1rem;
@@ -344,7 +344,7 @@ export const PointerClick = styled.img`
   }
   @media (max-width: 768px) {
     width: 3rem;
-    bottom: 5rem;
+    bottom: 7rem;
     margin-left: 0;
   }
 `;
