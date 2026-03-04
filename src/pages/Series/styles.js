@@ -200,8 +200,8 @@ export const Content4 = styled.div`
   overflow: hidden; /* importante */
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 3rem;
-    height: 100vh;
+  padding-left: 2rem;
+  justify-content: flex-start;
   }
 `;
 
@@ -252,6 +252,7 @@ export const FinalParagraph = styled.p`
   }
   @media (max-width: 768px){
     font-size: 1rem;
+    margin-left: 1rem;
   }
 `;
 
@@ -266,7 +267,7 @@ export const FinalSub = styled.h1`
     animation: ${slideInUp} 2.5s ease-out forwards;
   }
   @media (max-width: 768px){
-    margin-bottom: 30rem;
+    
     font-size: 2.7rem;
     line-height: 2.5rem;
   }
@@ -314,11 +315,11 @@ export const AgendeButton = styled.button`
     }
   }
   @media (max-width: 768px){
-    width: 15rem;
+    width: 14rem;
     height: 3rem;
     padding: 0;
     position: relative;
-    bottom: 36rem;
+    bottom: 2rem;
     
     .title {
       font-size: 1rem;
@@ -343,7 +344,7 @@ export const PointerClick = styled.img`
   }
   @media (max-width: 768px) {
     width: 3rem;
-    bottom: 40rem;
+    bottom: 5rem;
     margin-left: 0;
   }
 `;
@@ -360,11 +361,9 @@ export const RaquelSerie = styled.img`
     animation: ${slideInUp} 1.5s ease-out forwards;
   }
   @media (max-width: 768px){
-    bottom: 0;
-    
-    left:14%;  
-    height: 43vh;
-    width: auto;
+    bottom: -4.5rem;   /* desce levemente */
+  left: 14%;
+  height: 47vh;
   }
   
 `;
