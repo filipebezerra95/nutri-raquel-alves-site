@@ -29,7 +29,7 @@ import insta from "../../assets/about-page/instagram.svg";
 import whats from "../../assets/about-page/whatsapp.svg";
 import you from "../../assets/about-page/youtube.svg";
 import faceCell from "../../assets/about-page/mockup-celFace.svg";
-import mockupCelinsta from "../../assets/about-page/mockup-celInsta.svg";
+import mockupCelinsta from "../../assets/about-page/mockup-cellinsta.svg";
 import note from "../../assets/about-page/mockup-noteFace.svg";
 
 function About() {
@@ -150,8 +150,8 @@ function About() {
         </DivBox>
         <DivMockups>
           <DivPhones className="animate">
-            <CelFace className="animate" src={faceCell} />
-            <CelInsta className="animate" src={mockupCelinsta} />
+            <CelFace className="animate" src={faceCell} alt="mockup cel face" />
+            <CelInsta className="animate" src={mockupCelinsta} alt="mockup cell insta" />
           </DivPhones>
           <NoteFace className="animate" src={note} />
         </DivMockups>
