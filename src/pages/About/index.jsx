@@ -29,7 +29,7 @@ import insta from "../../assets/about-page/instagram.svg";
 import whats from "../../assets/about-page/whatsapp.svg";
 import you from "../../assets/about-page/youtube.svg";
 import faceCell from "../../assets/about-page/mockup-celFace.svg";
-import mockupCelinsta from "../../assets/about-page/mockup-celinsta.svg";
+import mockupCelinsta from "../../assets/about-page/mockup-celInsta.svg";
 import note from "../../assets/about-page/mockup-noteFace.svg";
 
 function About() {
