@@ -1482,8 +1482,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px){
     bottom: 0;
-    left:13%;  
-    height: 45vh;
+    
+    left:14%;  
+    height: 43vh;
     width: auto;
   }
   
