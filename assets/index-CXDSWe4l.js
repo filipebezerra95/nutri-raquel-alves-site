@@ -1337,8 +1337,8 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   overflow: hidden; /* importante */
   @media (max-width: 768px) {
     flex-direction: column;
-    padding-left: 3rem;
-    height: 100vh;
+  padding-left: 2rem;
+  justify-content: flex-start;
   }
 `,EE=B.div`
   position: relative;
@@ -1381,6 +1381,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px){
     font-size: 1rem;
+    margin-left: 1rem;
   }
 `,jE=B.h1`
   font-family: "anton";
@@ -1393,7 +1394,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     animation: ${ju} 2.5s ease-out forwards;
   }
   @media (max-width: 768px){
-    margin-bottom: 30rem;
+    
     font-size: 2.7rem;
     line-height: 2.5rem;
   }
@@ -1439,11 +1440,11 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     }
   }
   @media (max-width: 768px){
-    width: 15rem;
+    width: 14rem;
     height: 3rem;
     padding: 0;
     position: relative;
-    bottom: 36rem;
+    bottom: 2rem;
     
     .title {
       font-size: 1rem;
@@ -1466,7 +1467,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px) {
     width: 3rem;
-    bottom: 40rem;
+    bottom: 5rem;
     margin-left: 0;
   }
 `,OE=B.img`
@@ -1481,11 +1482,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     animation: ${ju} 1.5s ease-out forwards;
   }
   @media (max-width: 768px){
-    bottom: 0;
-    
-    left:14%;  
-    height: 43vh;
-    width: auto;
+    bottom: -4.5rem;   /* desce levemente */
+  left: 14%;
+  height: 47vh;
   }
   
 `,DE="/nutri-raquel-alves-site/assets/foto1-DQDQvcxn.png",CE=Object.freeze(Object.defineProperty({__proto__:null,default:DE},Symbol.toStringTag,{value:"Module"})),ME="/nutri-raquel-alves-site/assets/foto10-CWOCV5su.png",NE=Object.freeze(Object.defineProperty({__proto__:null,default:ME},Symbol.toStringTag,{value:"Module"})),UE="/nutri-raquel-alves-site/assets/foto11-CAAJrZ6y.png",LE=Object.freeze(Object.defineProperty({__proto__:null,default:UE},Symbol.toStringTag,{value:"Module"})),BE="/nutri-raquel-alves-site/assets/foto12-DaEAdj-N.png",HE=Object.freeze(Object.defineProperty({__proto__:null,default:BE},Symbol.toStringTag,{value:"Module"})),qE="/nutri-raquel-alves-site/assets/foto13-CNX0IAwH.png",YE=Object.freeze(Object.defineProperty({__proto__:null,default:qE},Symbol.toStringTag,{value:"Module"})),GE="/nutri-raquel-alves-site/assets/foto14-DKtPDEM5.png",XE=Object.freeze(Object.defineProperty({__proto__:null,default:GE},Symbol.toStringTag,{value:"Module"})),QE="/nutri-raquel-alves-site/assets/foto15-BPDJQdye.png",VE=Object.freeze(Object.defineProperty({__proto__:null,default:QE},Symbol.toStringTag,{value:"Module"})),ZE="/nutri-raquel-alves-site/assets/foto16-CGCT8-SQ.png",KE=Object.freeze(Object.defineProperty({__proto__:null,default:ZE},Symbol.toStringTag,{value:"Module"})),$E="/nutri-raquel-alves-site/assets/foto17-Dunk95G9.png",JE=Object.freeze(Object.defineProperty({__proto__:null,default:$E},Symbol.toStringTag,{value:"Module"})),kE="/nutri-raquel-alves-site/assets/foto18-DjGlV9KM.png",FE=Object.freeze(Object.defineProperty({__proto__:null,default:kE},Symbol.toStringTag,{value:"Module"})),WE="/nutri-raquel-alves-site/assets/foto19-D4apngf-.png",PE=Object.freeze(Object.defineProperty({__proto__:null,default:WE},Symbol.toStringTag,{value:"Module"})),IE="/nutri-raquel-alves-site/assets/foto2-BZcgnTjq.png",e2=Object.freeze(Object.defineProperty({__proto__:null,default:IE},Symbol.toStringTag,{value:"Module"})),t2="/nutri-raquel-alves-site/assets/foto20-DEPklJIa.png",a2=Object.freeze(Object.defineProperty({__proto__:null,default:t2},Symbol.toStringTag,{value:"Module"})),n2="/nutri-raquel-alves-site/assets/foto21-9JjOwvMK.png",l2=Object.freeze(Object.defineProperty({__proto__:null,default:n2},Symbol.toStringTag,{value:"Module"})),i2="/nutri-raquel-alves-site/assets/foto3-C33H-zvB.png",r2=Object.freeze(Object.defineProperty({__proto__:null,default:i2},Symbol.toStringTag,{value:"Module"})),o2="/nutri-raquel-alves-site/assets/foto4-DBbIakpo.png",u2=Object.freeze(Object.defineProperty({__proto__:null,default:o2},Symbol.toStringTag,{value:"Module"})),s2="/nutri-raquel-alves-site/assets/foto5-D_FyxD4h.png",c2=Object.freeze(Object.defineProperty({__proto__:null,default:s2},Symbol.toStringTag,{value:"Module"})),f2="/nutri-raquel-alves-site/assets/foto6-DOpmOIaj.png",d2=Object.freeze(Object.defineProperty({__proto__:null,default:f2},Symbol.toStringTag,{value:"Module"})),m2="/nutri-raquel-alves-site/assets/foto7-CwkYlnAy.png",h2=Object.freeze(Object.defineProperty({__proto__:null,default:m2},Symbol.toStringTag,{value:"Module"})),p2="/nutri-raquel-alves-site/assets/foto8-F4CgQKF_.png",g2=Object.freeze(Object.defineProperty({__proto__:null,default:p2},Symbol.toStringTag,{value:"Module"})),v2="/nutri-raquel-alves-site/assets/foto9-Dx5k9UKu.png",y2=Object.freeze(Object.defineProperty({__proto__:null,default:v2},Symbol.toStringTag,{value:"Module"})),x2=B.div`
