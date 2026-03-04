@@ -1444,7 +1444,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     height: 3rem;
     padding: 0;
     position: relative;
-    bottom: 2rem;
+    bottom: 4rem;
     
     .title {
       font-size: 1rem;
@@ -1467,7 +1467,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px) {
     width: 3rem;
-    bottom: 5rem;
+    bottom: 7rem;
     margin-left: 0;
   }
 `,OE=B.img`
