@@ -123,6 +123,18 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     width: 100%;
     height: 100%;
   }
+  /* troca a ordem no mobile */
+  &:nth-child(1) {
+    @media (max-width: 768px) {
+      order: -1;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (max-width: 768px) {
+      order: -2;
+    }
+  }
   
 `,ci=B.img`
   width: 100%;
@@ -605,6 +617,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     margin-left: 1rem;
     width: 350px;
   }
+  @media (max-width: 370px) {
+    width: 21rem;
+  }
 `,hw=B.div`
   display: flex;
   margin-top: 10rem;
@@ -630,6 +645,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   @media (max-width: 768px) {
     line-height: 3.5rem;
   }
+  @media (max-width: 370px) {
+    font-size: 4rem;
+  }
 `,vw=B.h1`
   font-family: "anton";
   font-size: 89px;
@@ -641,6 +659,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     text-align: center;
     font-size: 7rem;
     line-height: 7rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 6rem;
+    line-height: 6rem;
   }
 `,yw=B.div`
   display: flex;
@@ -698,6 +720,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   &.show {
     animation: ${Hg} 1.5s ease-out forwards;
   }
+  @media (max-width: 370px) {
+   
+  }
 `,Rw=B.img`
   width: 400px;
   position: relative;
@@ -715,6 +740,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     width: 24rem;
     left: 0;
   }
+  @media (max-width: 370px) {
+    width: 22rem;
+    left: 1rem;
+  }
 `,jw=B.img`
   width: 200px;
   cursor: pointer;
@@ -726,6 +755,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
 
   @media (max-width: 768px) {
     width: 11rem;
+  }
+  @media (max-width: 370px) {
+    width: 10.5rem;
   }
 `,Tw=B.img`
   width: 220px;
@@ -794,7 +826,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   justify-content: space-around;
   align-items: center;
   @media (max-width: 768px) {
-    width: 370px;
+    width: 98vw;
     height: 150px;
     border-radius: 0px 15px 15px 0;
     padding-left: 15px;
@@ -802,6 +834,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
       animation: ${$n} 2.5s ease-out forwards;
     }
   }
+  
 `,Gw=B.div`
   text-align: center;
   @media (max-width: 768px) {
@@ -849,7 +882,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   @media (max-width: 768px) {
     position: absolute;
     width: 7rem;
-    left: 15rem;
+    right: 2%;
     bottom: 0.5rem;
   }
 `,Zw=B.div`
@@ -877,12 +910,12 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   color: #f5f5ef;
 
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
   &.show {
     animation: ${$n} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 350px;
+    width: 20rem;
   }
 `,Jw=B.div`
   @media (max-width: 768px) {
@@ -892,13 +925,12 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   color: ${({theme:l})=>l.colors.white1};
   font-weight: bold;
 
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   line-height: 2rem;
   &.show {
     animation: ${wl} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    font-size: 2.4rem;
     margin-bottom: 1rem;
   }
 `,Fw=B.p`
@@ -906,19 +938,19 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   font-family: "montserrat";
   color: ${({theme:l})=>l.colors.white1};
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
   &.show {
     animation: ${$n} 2.5s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 350px;
-    font-size: 1.4rem;
+    width: 20rem;
+    
   }
 `,Ww=B.p`
   margin-top: 3rem;
   text-align: center;
   font-family: "arimo";
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 4vw, 2rem);
   font-weight: 400;
   color: ${({theme:l})=>l.colors.white1};
 
@@ -927,7 +959,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px) {
     margin-top: 0;
+    margin-left: 2rem;
     text-align: left;
+    width: 100%;
   }
 `,Pw=B.div`
   height: 100vh;
@@ -956,7 +990,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
 
   @media (max-width: 768px) {
     margin-top: 0.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `,tE=B.h1`
   width: 500px;
@@ -972,7 +1006,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     animation: ${$n} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 380px;
+    width: 20rem;
     font-size: 2.2rem;
     line-height: 2.2rem;
     margin-left: 2rem;
@@ -989,7 +1023,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     animation: ${wl} 1.5s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 380px;
+    width: 20rem;
     font-size: 1.3rem;
     margin-left: 2rem;
     line-height: 1.7rem;
@@ -1006,7 +1040,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     animation: ${wl} 2.5s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 380px;
+    width: 100%;
     font-size: 2.2rem;
     line-height: 2.2rem;
     margin-left: 2rem;
@@ -1023,10 +1057,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     animation: ${$n} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 370px;
+    width: 20rem;
     font-size: 1.3rem;
     margin-left: 2rem;
-
+    margin-bottom: 0;
     line-height: 1.7rem;
   }
 `,iE=B.div`
@@ -1034,7 +1068,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
-    margin-top: 20rem;
+    margin-top: 29rem;
   }
 `,rE=B.div`
   display: flex;
@@ -1145,7 +1179,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   font-family: "poppins";
   color: #f5f5fe;
   line-height: 1.5rem;
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 4.5vw, 1.4rem);
   margin-left: 10rem;
   margin-bottom: 5rem;
   &.show {
@@ -1153,7 +1187,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px) {
     margin-left: 2rem;
-    width: 350px;
+    width: 20rem;
   }
 `,T0=B.span`
   font-weight: bold;
@@ -1366,9 +1400,14 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   @media (max-width: 768px) {
     margin-top: 3rem;
     font-size: 3rem;
+    
     width: 350px;
     line-height: 3rem;
     text-align: center;
+  }
+  @media (max-width: 370px) {
+    width: 20rem;
+    margin: 0 auto;
   }
 `,RE=B.p`
   font-family: "montserrat";
@@ -1383,6 +1422,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     font-size: 1rem;
     margin-left: 1rem;
   }
+  @media (max-width: 370px) {
+    margin-top: 1rem;
+  }
 `,jE=B.h1`
   font-family: "anton";
   font-weight: 400;
@@ -1393,10 +1435,14 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   &.show {
     animation: ${ju} 2.5s ease-out forwards;
   }
-  @media (max-width: 768px){
-    
+  @media (max-width: 768px){   
     font-size: 2.7rem;
     line-height: 2.5rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 370px) {
+    margin-left: 1rem;
+    font-size: 2.5rem;
   }
 `,TE=B.button`
   background: #f1eee7; /* bege claro */
@@ -1444,15 +1490,18 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     height: 3rem;
     padding: 0;
     position: relative;
-    bottom: 4rem;
-    
+    bottom: 4rem; 
+    left: 1rem;
     .title {
       font-size: 1rem;
     }
     .subtitle {
       font-size: 0.7rem;
     }
-
+    @media (max-width: 370px) {
+      left: 0.5rem;
+      bottom: 3rem;
+  }
   }
 `,_E=B.img`
   position: relative;
@@ -1648,6 +1697,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   100% {
     transform: translate(-30px, 170px) rotate(0deg);
   }
+ 
 `,D2=Ge`
   0%, 100% {
     transform: scale(1);
@@ -1750,6 +1800,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   @media (max-width:768px){
     z-index: 2;
   }
+  @media (max-width: 370px) {
+    top: 40px;
+  }
 `,H2=B.div`
   display: flex;
   flex-direction: column;
@@ -1775,6 +1828,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width:768px) {
     font-size: 8rem;
+    
+  }
+  @media (max-width: 370px) {
+    font-size: 5rem;
   }
 `,G2=B.h2`
   width: 430px;
@@ -1788,6 +1845,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   @media (max-width:768px){
     width: 390px;
     font-size: 1.5rem;
+  }
+  @media (max-width: 370px) {
+    width: 25rem;
+    font-size: 1.4rem;
   }
 `,X2=B.h3`
   width: 531px;
@@ -1806,6 +1867,11 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     width: 380px;
     font-size: 1.1rem;
   }
+  @media (max-width: 370px) {
+    font-size: 1rem;
+    width: 20rem;
+    font-weight: 500;
+  }
 `,Q2=B.p`
   font-family: 'montserrat';
   font-size: 2rem;
@@ -1816,6 +1882,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width:768px) {
     font-size: 1.5rem;
+  }
+  @media (max-width: 370px) {
+    width: 20rem;
   }
 `,V2=B.div`
   display: flex;
@@ -1871,6 +1940,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     line-height: 25px;
     width: 25rem;
   }
+  @media (max-width: 370px) {
+    width: 24rem ;
+    font-size: 1.7rem;
+  }
 `,Qg=B.p`
   font-family: 'montserrat';
   font-weight: bold;
@@ -1884,6 +1957,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     font-size: 1.2rem;
     line-height: 1rem;
     width: 165px;
+  }
+  @media (max-width: 370px) {
+    line-height: 1.4rem;
   }
 `,F2=B.div`
   margin-left: 10rem;
@@ -1904,8 +1980,12 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     font-size: 1.9rem;
     line-height: 25px;
     width: 25rem;
-    right: 3rem;
-    
+    right: 3rem;   
+  }
+  @media (max-width: 370px){
+    font-size: 1.8rem;
+    width: 26rem;
+    right: 6rem;
   }
 `,P2=B(Qg)`
   text-align: right;
@@ -1919,6 +1999,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     left: 10.3rem;
     width: 182px;
     font-size: 18px;
+  }
+  @media (max-width: 370px) {
+    left: 8rem;
   }
 `,I2=B.img`
   width: 372px;
@@ -1935,10 +2018,6 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   display: flex;
   justify-content: space-around;
   margin:5rem 5rem auto 0 ;
-  @media (max-width: 768px) {
-    
-    
-  } 
 `,tA=B.img`
   width: 20rem; 
   margin-left: 1rem;
@@ -1985,6 +2064,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     font-size: 3rem;
     margin-bottom: 1rem;
   }
+  @media (max-width: 370px) {
+    font-size: 2.7rem;
+    line-height: 2.3rem;
+  }
  `,M0=B.p`
   font-family: 'montserrat';
   font-weight: bold;
@@ -1997,6 +2080,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   }
   @media (max-width: 768px){
     font-size: 1.3rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 1.2rem;
   }
  `,lA=B.h1`
   font-family: 'poppins';
@@ -2032,6 +2118,9 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
   @media (max-width: 768px){
     position: relative;
     bottom: 15rem;
+  }
+  @media (max-width: 370px) {
+    right: 1rem;
   }
  `,oA=B.img`
   position: relative;
@@ -2083,6 +2172,11 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     line-height: 1rem;
     position: relative;
     top: 2rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    top: 1.7rem;
   }
   
  `,fA=B.button`
@@ -2146,7 +2240,7 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
     top: 12rem;
     font-size: 1rem;
   }
-`,dA="/nutri-raquel-alves-site/assets/bag-BdTz0Mzs.svg",mA="/nutri-raquel-alves-site/assets/primary-8vUoR9K-.svg",hA="/nutri-raquel-alves-site/assets/sec-DT_VwJzX.svg",pA="/nutri-raquel-alves-site/assets/trd-D2bnXy8k.svg",gA="/nutri-raquel-alves-site/assets/redFruits-DiU3g2om.svg",vA="/nutri-raquel-alves-site/assets/kiwi-C9Ff-Goc.svg",yA="/nutri-raquel-alves-site/assets/stranberry-7QIP7iC4.svg",xA="/nutri-raquel-alves-site/assets/redArow-CFTyFNmD.svg",bA="/nutri-raquel-alves-site/assets/red-splash-iJYPeAyo.svg",SA="/nutri-raquel-alves-site/assets/mockup-pad-wUPTk7vW.svg";function wA(){return U.useEffect(()=>{const l=new IntersectionObserver(s=>{s.forEach(u=>{u.isIntersecting?u.target.classList.add("show"):u.target.classList.remove("show")})},{threshold:.1});return document.querySelectorAll(".animate").forEach(s=>l.observe(s)),()=>l.disconnect()},[]),h.jsxs(M2,{children:[h.jsx(xi,{}),h.jsx(N2,{className:"animate",src:dA}),h.jsx(U2,{className:"animate",src:mA}),h.jsx(L2,{className:"animate",src:hA}),h.jsx(B2,{className:"animate",src:pA}),h.jsx(H2,{children:h.jsxs(q2,{children:[h.jsx(Y2,{className:"animate",children:"E-BOOK"}),h.jsx(G2,{className:"animate",children:"30 RECEITAS FUNCIONAIS"}),h.jsxs(X2,{className:"animate",children:["Sem Glúten • Sem Lactose • Sem Açúcar",h.jsx("br",{})," por ",h.jsx("span",{children:"Nutri Raquel Alves"})]}),h.jsxs(Q2,{className:"animate",children:["Você quer comer melhor…",h.jsx("br",{})," mas está cansada de receitas complicadas, caras e sem sabor?",h.jsx("br",{}),h.jsx("br",{})," Este e-book foi criado para quem quer:"]}),h.jsxs(V2,{children:[h.jsxs(Z2,{className:"animate",children:["✔ Emagrecer sem passar fome ",h.jsx("br",{})," ✔ Reduzir inchaço e desconforto",h.jsx("br",{}),"intestinal",h.jsx("br",{})," ✔ Comer doce sem culpa",h.jsx("br",{})," ✔ Ter opções práticas para o dia a dia",h.jsx("br",{})," ✔ Sair do “sempre a mesma coisa”"]}),h.jsx(K2,{className:"animate",src:gA})]})]})}),h.jsxs($2,{children:[h.jsxs(J2,{children:[h.jsxs(k2,{children:[h.jsxs(Xg,{className:"animate",children:["Nada de receitas",h.jsx("br",{})," aleatórias da internet."]}),h.jsxs(Qg,{className:"animate",children:["São preparações pensadas para:",h.jsx("br",{})," • melhorar digestão",h.jsx("br",{})," • estabilizar glicemia",h.jsx("br",{})," • aumentar saciedade",h.jsx("br",{})," • facilitar o processo de emagrecimento"]})]}),h.jsx(I2,{className:"animate",src:vA})]}),h.jsxs(eA,{children:[h.jsx(tA,{className:"animate",src:yA}),h.jsxs(F2,{children:[h.jsxs(W2,{className:"animate",children:["Aqui você encontra 30",h.jsx("br",{})," receitas testadas na",h.jsx("br",{})," prática, com:",h.jsx("br",{})]}),h.jsxs(P2,{className:"animate",children:["Salgadas low carb",h.jsx("br",{})," Doces funcionais",h.jsx("br",{})," Chás e sucos estratégicos",h.jsx("br",{}),"Informação nutricional completa",h.jsx("br",{})," (kcal, carbo, proteína e gordura)"]})]})]})]}),h.jsxs(aA,{children:[h.jsxs(nA,{children:[h.jsxs(C0,{className:"animate",children:["Para quem é",h.jsx("br",{})," esse e-book?"]}),h.jsxs(M0,{className:"animate",children:["✔ Homens e mulheres que vivem inchadas",h.jsx("br",{})," ✔ Quem quer reduzir açúcar sem sofrer",h.jsx("br",{})," ✔ Quem busca opções sem glúten e lactose",h.jsx("br",{})," ✔ Quem já tentou dieta e não conseguiu manter",h.jsx("br",{})]}),h.jsx(C0,{children:"O que você vai receber?"}),h.jsxs(M0,{className:"animate",children:["E-book digital completo (PDF)",h.jsx("br",{})," Acesso imediato após pagamento",h.jsx("br",{})," Pode usar no celular, tablet ou imprimir"]}),h.jsxs(lA,{className:"animate",children:["Quero minhas 30 receitas",h.jsx("br",{})," funcionais agora!"]}),h.jsx(iA,{className:"animate",src:xA})]}),h.jsxs(rA,{children:[h.jsx(oA,{className:"animate",src:bA}),h.jsxs(uA,{children:[h.jsx(sA,{className:"animate",src:SA}),h.jsxs(cA,{className:"animate",children:["Menos que",h.jsx("br",{})," um lanche",h.jsx("br",{})," no fim de",h.jsx("br",{})," semana e",h.jsx("br",{})," com",h.jsx("br",{})," impacto",h.jsx("br",{})," muito",h.jsx("br",{})," maior na",h.jsx("br",{})," sua saúde"]})]}),h.jsx(fA,{className:"animate",children:"COMPRAR AGORA"})]})]})]})}const Gf=Ge`
+`,dA="/nutri-raquel-alves-site/assets/bag-BdTz0Mzs.svg",mA="/nutri-raquel-alves-site/assets/primary-8vUoR9K-.svg",hA="/nutri-raquel-alves-site/assets/sec-DT_VwJzX.svg",pA="/nutri-raquel-alves-site/assets/trd-D2bnXy8k.svg",gA="/nutri-raquel-alves-site/assets/redFruits-DiU3g2om.svg",vA="/nutri-raquel-alves-site/assets/kiwi-C9Ff-Goc.svg",yA="/nutri-raquel-alves-site/assets/stranberry-7QIP7iC4.svg",xA="/nutri-raquel-alves-site/assets/redArow-CFTyFNmD.svg",bA="/nutri-raquel-alves-site/assets/red-splash-iJYPeAyo.svg",SA="/nutri-raquel-alves-site/assets/mockup-pad-wUPTk7vW.svg";function wA(){return U.useEffect(()=>{const l=new IntersectionObserver(s=>{s.forEach(u=>{u.isIntersecting?u.target.classList.add("show"):u.target.classList.remove("show")})},{threshold:.1});return document.querySelectorAll(".animate").forEach(s=>l.observe(s)),()=>l.disconnect()},[]),h.jsxs(M2,{children:[h.jsx(xi,{}),h.jsx(N2,{className:"animate",src:dA}),h.jsx(U2,{className:"animate",src:mA}),h.jsx(L2,{className:"animate",src:hA}),h.jsx(B2,{className:"animate",src:pA}),h.jsx(H2,{children:h.jsxs(q2,{children:[h.jsx(Y2,{className:"animate",children:"E-BOOK"}),h.jsx(G2,{className:"animate",children:"30 RECEITAS FUNCIONAIS"}),h.jsxs(X2,{className:"animate",children:["Sem Glúten • Sem Lactose • Sem Açúcar",h.jsx("br",{})," por ",h.jsx("span",{children:"Nutri Raquel Alves"})]}),h.jsxs(Q2,{className:"animate",children:["Você quer comer melhor…",h.jsx("br",{})," mas está cansada de receitas complicadas, caras e sem sabor?",h.jsx("br",{}),h.jsx("br",{})," Este e-book foi criado para quem quer:"]}),h.jsxs(V2,{children:[h.jsxs(Z2,{className:"animate",children:["✔ Emagrecer sem passar fome ",h.jsx("br",{})," ✔ Reduzir inchaço e desconforto",h.jsx("br",{}),"intestinal",h.jsx("br",{})," ✔ Comer doce sem culpa",h.jsx("br",{})," ✔ Ter opções práticas para o dia a dia",h.jsx("br",{})," ✔ Sair do “sempre a mesma coisa”"]}),h.jsx(K2,{className:"animate",src:gA})]})]})}),h.jsxs($2,{children:[h.jsxs(J2,{children:[h.jsxs(k2,{children:[h.jsxs(Xg,{className:"animate",children:["Nada de receitas",h.jsx("br",{})," aleatórias da internet."]}),h.jsxs(Qg,{className:"animate",children:["São preparações pensadas para:",h.jsx("br",{})," • melhorar digestão",h.jsx("br",{})," • estabilizar glicemia",h.jsx("br",{})," • aumentar saciedade",h.jsx("br",{})," • facilitar o processo de emagrecimento"]})]}),h.jsx(I2,{className:"animate",src:vA})]}),h.jsxs(eA,{children:[h.jsx(tA,{className:"animate",src:yA}),h.jsxs(F2,{children:[h.jsxs(W2,{className:"animate",children:["Aqui você encontra 30",h.jsx("br",{})," receitas testadas na",h.jsx("br",{})," prática, com:",h.jsx("br",{})]}),h.jsxs(P2,{className:"animate",children:["Salgadas low carb",h.jsx("br",{})," Doces funcionais",h.jsx("br",{})," Chás e sucos estratégicos",h.jsx("br",{}),"Informação nutricional completa",h.jsx("br",{})," (kcal, carbo, proteína e gordura)"]})]})]})]}),h.jsxs(aA,{children:[h.jsxs(nA,{children:[h.jsxs(C0,{className:"animate",children:["Para quem é",h.jsx("br",{})," esse e-book?"]}),h.jsxs(M0,{className:"animate",children:["✔ Homens e mulheres que vivem inchadas",h.jsx("br",{})," ✔ Quem quer reduzir açúcar sem sofrer",h.jsx("br",{})," ✔ Quem busca opções sem glúten e lactose",h.jsx("br",{})," ✔ Quem já tentou dieta e não conseguiu manter",h.jsx("br",{})]}),h.jsx(C0,{children:"O que você vai receber?"}),h.jsxs(M0,{className:"animate",children:["E-book digital completo (PDF)",h.jsx("br",{})," Acesso imediato após pagamento",h.jsx("br",{})," Pode usar no celular, tablet ou imprimir"]}),h.jsxs(lA,{className:"animate",children:["Quero minhas 30 receitas",h.jsx("br",{})," funcionais agora!"]}),h.jsx(iA,{className:"animate",src:xA})]}),h.jsxs(rA,{children:[h.jsx(oA,{className:"animate",src:bA}),h.jsxs(uA,{children:[h.jsx(sA,{className:"animate",src:SA}),h.jsxs(cA,{className:"animate",children:["Menos que",h.jsx("br",{})," um lanche",h.jsx("br",{})," no fim de",h.jsx("br",{})," semana e",h.jsx("br",{})," com",h.jsx("br",{})," impacto",h.jsx("br",{})," muito",h.jsx("br",{})," maior na",h.jsx("br",{})," sua saúde"]})]}),h.jsx(fA,{onClick:()=>window.open("https://hotmart.com/pt-br/marketplace/produtos/30-receitas-funcionais-para-emagrecimento-e-saude-intestinal/E104567025I"),className:"animate",children:"COMPRAR AGORA"})]})]})]})}const Gf=Ge`
     from {
         opacity: 0;
         transform: translateX(-50px);
@@ -2240,6 +2334,11 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
       font-size: 4rem;
       line-height: 5rem;
     }
+    @media (max-width: 370px) {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-left: 1rem;
+  }
 `,CA=B.h2`
     font-family: 'anton';
     font-size: 9rem;
@@ -2252,6 +2351,11 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
       font-size: 5rem;
       line-height: 5rem;
     }
+    @media (max-width: 370px) {
+    font-size: 4.5rem;
+    margin-left: 1rem;
+
+  }
 `,N0=B.p`
     font-family: 'montserrat';
     font-weight: 600;
@@ -2266,6 +2370,10 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
       line-height: 1rem;
       font-size: 0.95rem;
     }
+    @media (max-width: 370px) {
+    width: 25rem;
+    margin-left: 0.5rem;
+  }
 `,MA=B.h1`
     font-family: 'anton';
     font-weight: 400;
@@ -2280,6 +2388,11 @@ Please change the parent <Route path="${V}"> to <Route path="${V==="/"?"*":`${V}
       line-height: 1rem;
       font-size: 2.4rem;
     }
+    @media (max-width: 370px) {
+    width: 25rem;
+    font-size: 2.3rem;
+    margin-left: 0.5rem;
+  }
 `,NA=B.button`
   width: 100%;
   max-width: 500px;
