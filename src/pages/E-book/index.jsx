@@ -167,7 +167,7 @@ function Ebook() {
             </Phrase>
             
           </DivMockup>
-          <ButtonBuy className="animate">COMPRAR AGORA</ButtonBuy>
+          <ButtonBuy onClick={() => window.open("https://hotmart.com/pt-br/marketplace/produtos/30-receitas-funcionais-para-emagrecimento-e-saude-intestinal/E104567025I")}  className="animate" >COMPRAR AGORA</ButtonBuy>
         </DivFigures>
       </Content3>
     </Container>

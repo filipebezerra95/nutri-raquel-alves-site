@@ -115,6 +115,11 @@ export const Title = styled.h1`
       font-size: 4rem;
       line-height: 5rem;
     }
+    @media (max-width: 370px) {
+    font-size: 3rem;
+    line-height: 4rem;
+    margin-left: 1rem;
+  }
 `;
 
 export const SubTitle = styled.h2`
@@ -129,6 +134,11 @@ export const SubTitle = styled.h2`
       font-size: 5rem;
       line-height: 5rem;
     }
+    @media (max-width: 370px) {
+    font-size: 4.5rem;
+    margin-left: 1rem;
+
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -145,6 +155,10 @@ export const Paragraph = styled.p`
       line-height: 1rem;
       font-size: 0.95rem;
     }
+    @media (max-width: 370px) {
+    width: 25rem;
+    margin-left: 0.5rem;
+  }
 `;
 
 export const TitleBody = styled.h1`
@@ -161,6 +175,11 @@ export const TitleBody = styled.h1`
       line-height: 1rem;
       font-size: 2.4rem;
     }
+    @media (max-width: 370px) {
+    width: 25rem;
+    font-size: 2.3rem;
+    margin-left: 0.5rem;
+  }
 `; 
 
 export const ButtonCTA = styled.button`

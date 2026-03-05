@@ -138,6 +138,9 @@ export const Paragraph = styled.p`
     margin-left: 1rem;
     width: 350px;
   }
+  @media (max-width: 370px) {
+    width: 21rem;
+  }
 `;
 
 export const Content2 = styled.div`
@@ -169,6 +172,9 @@ export const TitleBox = styled.h1`
   @media (max-width: 768px) {
     line-height: 3.5rem;
   }
+  @media (max-width: 370px) {
+    font-size: 4rem;
+  }
 `;
 
 export const SubTitleBox = styled.h1`
@@ -182,6 +188,10 @@ export const SubTitleBox = styled.h1`
     text-align: center;
     font-size: 7rem;
     line-height: 7rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 6rem;
+    line-height: 6rem;
   }
 `;
 
@@ -255,6 +265,9 @@ export const DivPhones = styled.div`
   &.show {
     animation: ${slideInRight} 1.5s ease-out forwards;
   }
+  @media (max-width: 370px) {
+   
+  }
 `;
 
 export const NoteFace = styled.img`
@@ -274,6 +287,10 @@ export const NoteFace = styled.img`
     width: 24rem;
     left: 0;
   }
+  @media (max-width: 370px) {
+    width: 22rem;
+    left: 1rem;
+  }
 `;
 
 export const CelFace = styled.img`
@@ -287,6 +304,9 @@ export const CelFace = styled.img`
 
   @media (max-width: 768px) {
     width: 11rem;
+  }
+  @media (max-width: 370px) {
+    width: 10.5rem;
   }
 `;
 

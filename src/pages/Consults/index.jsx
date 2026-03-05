@@ -147,7 +147,7 @@ function Consults() {
         </DivButtons>
         <FinalParagraph className="animate">
           <PrimarySpan className="animate">Consulta avulsa</PrimarySpan> é para quem quer orientação pontual.<br/><PrimarySpan>Consulta Premium</PrimarySpan> 
-          é para quem quer transformação.<br/><SecondarySpan className="animate">GARANTIA/ SEGURANÇA</SecondarySpan> <br/> Compromisso,
+           é para quem quer transformação.<br/><SecondarySpan className="animate">GARANTIA/ SEGURANÇA</SecondarySpan> <br/> Compromisso,
           estratégia e acompanhamento contínuo.<br/> Você investe na sua saúde com
           clareza, direção e acompanhamento profissional.<br/><br/> Se você está pronta
           para parar de começar e parar, esse é o seu momento.<br/> Garanta sua vaga

@@ -89,6 +89,7 @@ const throwThird = keyframes`
   100% {
     transform: translate(-30px, 170px) rotate(0deg);
   }
+ 
 `;
 const splashPulse = keyframes`
   0%, 100% {
@@ -211,6 +212,9 @@ export const Third = styled.img`
   @media (max-width:768px){
     z-index: 2;
   }
+  @media (max-width: 370px) {
+    top: 40px;
+  }
 `;
 
 export const Content = styled.div`
@@ -242,6 +246,10 @@ export const Title = styled.h1`
   }
   @media (max-width:768px) {
     font-size: 8rem;
+    
+  }
+  @media (max-width: 370px) {
+    font-size: 5rem;
   }
 `;
 
@@ -257,6 +265,10 @@ export const SubTitle = styled.h2`
   @media (max-width:768px){
     width: 390px;
     font-size: 1.5rem;
+  }
+  @media (max-width: 370px) {
+    width: 25rem;
+    font-size: 1.4rem;
   }
 `;
 
@@ -277,6 +289,11 @@ export const Info = styled.h3`
     width: 380px;
     font-size: 1.1rem;
   }
+  @media (max-width: 370px) {
+    font-size: 1rem;
+    width: 20rem;
+    font-weight: 500;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -289,6 +306,9 @@ export const Paragraph = styled.p`
   }
   @media (max-width:768px) {
     font-size: 1.5rem;
+  }
+  @media (max-width: 370px) {
+    width: 20rem;
   }
 `;
 
@@ -358,6 +378,10 @@ export const TitleText = styled.h1`
     line-height: 25px;
     width: 25rem;
   }
+  @media (max-width: 370px) {
+    width: 24rem ;
+    font-size: 1.7rem;
+  }
 `;
 
 export const ParagraphText = styled.p`
@@ -373,6 +397,9 @@ export const ParagraphText = styled.p`
     font-size: 1.2rem;
     line-height: 1rem;
     width: 165px;
+  }
+  @media (max-width: 370px) {
+    line-height: 1.4rem;
   }
 `;
 
@@ -397,8 +424,12 @@ export const TitleText2 = styled(TitleText)`
     font-size: 1.9rem;
     line-height: 25px;
     width: 25rem;
-    right: 3rem;
-    
+    right: 3rem;   
+  }
+  @media (max-width: 370px){
+    font-size: 1.8rem;
+    width: 26rem;
+    right: 6rem;
   }
 `
 export const ParagraphText2 = styled(ParagraphText)`
@@ -413,6 +444,9 @@ export const ParagraphText2 = styled(ParagraphText)`
     left: 10.3rem;
     width: 182px;
     font-size: 18px;
+  }
+  @media (max-width: 370px) {
+    left: 8rem;
   }
 `
 
@@ -433,10 +467,6 @@ export const StanberryDiv = styled.div`
   display: flex;
   justify-content: space-around;
   margin:5rem 5rem auto 0 ;
-  @media (max-width: 768px) {
-    
-    
-  } 
 `;
 
 export const StranberryImage = styled.img`
@@ -490,6 +520,10 @@ export const StranberryImage = styled.img`
     font-size: 3rem;
     margin-bottom: 1rem;
   }
+  @media (max-width: 370px) {
+    font-size: 2.7rem;
+    line-height: 2.3rem;
+  }
  `;
 
  export const ParagraphSection = styled.p`
@@ -504,6 +538,9 @@ export const StranberryImage = styled.img`
   }
   @media (max-width: 768px){
     font-size: 1.3rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 1.2rem;
   }
  `;
 
@@ -545,6 +582,9 @@ export const ArrowRed = styled.img`
   @media (max-width: 768px){
     position: relative;
     bottom: 15rem;
+  }
+  @media (max-width: 370px) {
+    right: 1rem;
   }
  `;
 
@@ -604,6 +644,11 @@ export const Splash = styled.img`
     line-height: 1rem;
     position: relative;
     top: 2rem;
+  }
+  @media (max-width: 370px) {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    top: 1.7rem;
   }
   
  `;

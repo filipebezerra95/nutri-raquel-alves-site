@@ -65,7 +65,7 @@ export const Header = styled.div`
   justify-content: space-around;
   align-items: center;
   @media (max-width: 768px) {
-    width: 370px;
+    width: 98vw;
     height: 150px;
     border-radius: 0px 15px 15px 0;
     padding-left: 15px;
@@ -73,6 +73,7 @@ export const Header = styled.div`
       animation: ${slideInLeft} 2.5s ease-out forwards;
     }
   }
+  
 `;
 
 export const Titles = styled.div`
@@ -128,7 +129,7 @@ export const Selo = styled.img`
   @media (max-width: 768px) {
     position: absolute;
     width: 7rem;
-    left: 15rem;
+    right: 2%;
     bottom: 0.5rem;
   }
 `;
@@ -162,12 +163,12 @@ export const Paragraph = styled.p`
   color: #f5f5ef;
 
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
   &.show {
     animation: ${slideInLeft} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 350px;
+    width: 20rem;
   }
 `;
 
@@ -181,13 +182,12 @@ export const TitleText = styled.h1`
   color: ${({ theme }) => theme.colors.white1};
   font-weight: bold;
 
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   line-height: 2rem;
   &.show {
     animation: ${slideInRight} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    font-size: 2.4rem;
     margin-bottom: 1rem;
   }
 `;
@@ -197,13 +197,13 @@ export const ParagraphList = styled.p`
   font-family: "montserrat";
   color: ${({ theme }) => theme.colors.white1};
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
   &.show {
     animation: ${slideInLeft} 2.5s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 350px;
-    font-size: 1.4rem;
+    width: 20rem;
+    
   }
 `;
 
@@ -211,7 +211,7 @@ export const LastParagraph = styled.p`
   margin-top: 3rem;
   text-align: center;
   font-family: "arimo";
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 4vw, 2rem);
   font-weight: 400;
   color: ${({ theme }) => theme.colors.white1};
 
@@ -220,7 +220,9 @@ export const LastParagraph = styled.p`
   }
   @media (max-width: 768px) {
     margin-top: 0;
+    margin-left: 2rem;
     text-align: left;
+    width: 100%;
   }
 `;
 
@@ -255,7 +257,7 @@ export const ColumnText2 = styled.div`
 
   @media (max-width: 768px) {
     margin-top: 0.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -273,7 +275,7 @@ export const TitleColumn = styled.h1`
     animation: ${slideInLeft} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 380px;
+    width: 20rem;
     font-size: 2.2rem;
     line-height: 2.2rem;
     margin-left: 2rem;
@@ -292,7 +294,7 @@ export const Pcolumn = styled.p`
     animation: ${slideInRight} 1.5s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 380px;
+    width: 20rem;
     font-size: 1.3rem;
     margin-left: 2rem;
     line-height: 1.7rem;
@@ -311,7 +313,7 @@ export const TitleColumn2 = styled.h1`
     animation: ${slideInRight} 2.5s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 380px;
+    width: 100%;
     font-size: 2.2rem;
     line-height: 2.2rem;
     margin-left: 2rem;
@@ -330,10 +332,10 @@ export const Pcolumn2 = styled.p`
     animation: ${slideInLeft} 2s ease-out forwards;
   }
   @media (max-width: 768px) {
-    width: 370px;
+    width: 20rem;
     font-size: 1.3rem;
     margin-left: 2rem;
-
+    margin-bottom: 0;
     line-height: 1.7rem;
   }
 `;
@@ -343,7 +345,7 @@ export const Content3 = styled.div`
   display: flex;
   flex-direction: column;
   @media (max-width: 768px) {
-    margin-top: 20rem;
+    margin-top: 29rem;
   }
 `;
 
@@ -468,7 +470,7 @@ export const FinalParagraph = styled.p`
   font-family: "poppins";
   color: #f5f5fe;
   line-height: 1.5rem;
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 4.5vw, 1.4rem);
   margin-left: 10rem;
   margin-bottom: 5rem;
   &.show {
@@ -476,7 +478,7 @@ export const FinalParagraph = styled.p`
   }
   @media (max-width: 768px) {
     margin-left: 2rem;
-    width: 350px;
+    width: 20rem;
   }
 `;
 

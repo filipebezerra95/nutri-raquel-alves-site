@@ -235,9 +235,14 @@ export const FinalTitle = styled(Title)`
   @media (max-width: 768px) {
     margin-top: 3rem;
     font-size: 3rem;
+    
     width: 350px;
     line-height: 3rem;
     text-align: center;
+  }
+  @media (max-width: 370px) {
+    width: 20rem;
+    margin: 0 auto;
   }
 `;
 
@@ -254,6 +259,9 @@ export const FinalParagraph = styled.p`
     font-size: 1rem;
     margin-left: 1rem;
   }
+  @media (max-width: 370px) {
+    margin-top: 1rem;
+  }
 `;
 
 export const FinalSub = styled.h1`
@@ -266,10 +274,14 @@ export const FinalSub = styled.h1`
   &.show {
     animation: ${slideInUp} 2.5s ease-out forwards;
   }
-  @media (max-width: 768px){
-    
+  @media (max-width: 768px){   
     font-size: 2.7rem;
     line-height: 2.5rem;
+    margin-left: 1rem;
+  }
+  @media (max-width: 370px) {
+    margin-left: 1rem;
+    font-size: 2.5rem;
   }
 `;
 
@@ -319,15 +331,18 @@ export const AgendeButton = styled.button`
     height: 3rem;
     padding: 0;
     position: relative;
-    bottom: 4rem;
-    
+    bottom: 4rem; 
+    left: 1rem;
     .title {
       font-size: 1rem;
     }
     .subtitle {
       font-size: 0.7rem;
     }
-
+    @media (max-width: 370px) {
+      left: 0.5rem;
+      bottom: 3rem;
+  }
   }
 `;
 

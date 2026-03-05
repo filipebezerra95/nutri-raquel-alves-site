@@ -90,6 +90,18 @@ export const Card = styled.div`
     width: 100%;
     height: 100%;
   }
+  /* troca a ordem no mobile */
+  &:nth-child(1) {
+    @media (max-width: 768px) {
+      order: -1;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (max-width: 768px) {
+      order: -2;
+    }
+  }
   
 `;
 
